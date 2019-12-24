@@ -16,6 +16,10 @@ services:
       - /home/node/node_modules
     environment:
       NODE_ENV: ${NODE_ENV}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASS: ${DB_PASS}
+      DB_HOST: postgres
     links:
       - postgres
     depends_on:
